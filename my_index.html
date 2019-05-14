@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>エクササイズ</title>
+</head>
+<body>
+  <h1>フォームレッスン</h1>
+  <p>以下のフォームを埋めてください。(※は必須項目)</p>
+  <form action="">
+    <div>
+      <label for="username">※ユーザー名:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">※パスワード(6文字以上):</label>
+      <input type="password" id="password" name="password" required minlength="6">
+    </div>
+    <div>
+      ※性別:
+      <input type="radio" id="sexChoice1" name="sex" value="female" required>
+      <label for="sexChoice1">女性</label>
+      <input type="radio" id="sexChoice2" name="sex" value="male" required>
+      <label for="sexChoice2">男性</label>
+    </div>
+    <div>
+      ※生年月日:
+      <label for="birthYear">年:</label>
+      <select id="bitthYear" name="birthYear" required>
+        <option value="">---</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+      </select>
+      <label for="birthMonth">月:</label>
+      <select name="birthMonth" required>
+        <option value="">---</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="12">12</option>
+      </select>
+      <label for="birthDay">日:</label>
+      <select name="birthDay"> required
+        <option value="">---</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="31">31</option>
+      </select>
+    </div>
+    <div>
+      <label for="remarksColumn">備考欄:</label>
+      <div>
+        <textarea name="remarksColumn" id="remarksColumn"></textarea>
+      </div>
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+  </form>
+</body>
+</html>
